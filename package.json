@@ -1,0 +1,14 @@
+{
+  "name": "jda-testhuset.github.io",
+  "version": "1.0.0",
+  "description": "Testhusets ID Handel",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.12.12"
+  }
+}
