@@ -4,7 +4,7 @@ test('has title', async ({ page }) => {
   await page.goto('https://jda-testhuset.github.io/');
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/ID-FLÅDEN/);
+  await expect(page).toHaveTitle(/ID VIKINGERNE/);
 });
 
 test('has crew text', async ({ page }) => {
