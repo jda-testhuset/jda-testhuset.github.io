@@ -13,10 +13,12 @@ test('has crew text', async ({ page }) => {
   // Click the BESÆTNING link.
   await page.getByRole('link', { name: 'BESÆTNING' }).click();
 
-  // Use XPath to locate the element and verify its text content.
-  //const element = await page.locator('xpath=/html/body/div[3]/div[4]/h2');
-  //await expect(element).toHaveText('Testhusets søfolk');
+  // Use XPath to locate the element
+  const element = await page.locator('xpath=/html/body/div[3]/div[4]/h2');
+  
+  // Use data-testid to locate the element
+  //const element = await page.getByTestId('crew-title');
 
-  const element = await page.getByTestId('javadsbesaetning');
+  // Verify text on found element
   await expect(element).toHaveText('Testhusets søfolk');
 });
