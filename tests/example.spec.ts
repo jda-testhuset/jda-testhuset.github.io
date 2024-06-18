@@ -17,7 +17,7 @@ test('has crew text', async ({ page }) => {
   const element = await page.locator('xpath=/html/body/div[3]/div[4]/h2');
   
   // Use data-testid to locate the element
-  //const element = await page.getByTestId('crew-title');
+  //const element = await page.getByTestId('besaetning');
 
   // Verify text on found element
   await expect(element).toHaveText('Testhusets søfolk');
